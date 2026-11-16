@@ -15,20 +15,25 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
+
+The global medical practice management software (PMS) market is estimated at approximately $13.5B–$15B in 2025–2026, projected to surpass $18B by the late 2020s with an ~8–10% CAGR. The sector is moderately fragmented rather than a winner-take-all monopoly: while acute/hospital care is consolidated around enterprise EHR giants (e.g., Epic, Oracle Health), the ambulatory and outpatient practice landscape is divided among specialized multi-feature platforms, niche specialty providers, and regional vendors catering to independent clinics.
+
 ## SaaS/Hosted Platforms
 
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[athenahealth](https://www.athenahealth.com/)** | **Cloud-based EHR, practice management, and revenue cycle management.** athenaOne network used by **160,000+ providers**. Strong focus on revenue cycle and population health [citation:12]. | Quote-only (percentage of collections model) | No free tier; demo via sales |
-| **[AdvancedMD](https://www.advancedmd.com/)** | Integrated EHR, PM, billing, and telehealth for independent practices. | Quote-only | Free trial available |
-| **[DrChrono](https://www.drchrono.com/)** | EHR and practice management with mobile-first design and patient portal. | Quote-only | Free trial available |
-| **[Kareo (Tebra)](https://www.tebra.com/)** | Practice management and billing for small practices. | Quote-only | Free trial available |
-| **[NextGen Healthcare](https://www.nextgen.com/)** | Enterprise EHR and PM for ambulatory and specialty practices. | Quote-only | Demo via sales |
+| Product | Company Size (Valuation / Revenue) | Description | Pricing (Starting) | Free Tier / Trial Limits |
+|---------|------------------------------------|-------------|-------------------|--------------------------|
+| **[athenahealth](https://www.athenahealth.com/)** | ~$17B valuation (acquired by Bain Capital & H&F, 2022); ~$1.7B+ annual revenue | **Cloud-based EHR, practice management, and revenue cycle management.** athenaOne network used by **160,000+ providers**. Strong focus on revenue cycle and population health [citation:12]. | ~$140/provider/month base EHR license or 4%–7% of monthly collections (RCM) | No free forever plan; no self-serve free trial (offers 30–60 min guided live sales demo) |
+| **[NextGen Healthcare](https://www.nextgen.com/)** | ~$1.8B valuation (acquired by Thoma Bravo, 2023); ~$653M annual revenue | Enterprise EHR and PM for ambulatory and specialty practices. | ~$300–$500/provider/month (NextGen Office baseline) | No free forever plan; no self-serve free trial (guided sales demo and consultation upon request) |
+| **[AdvancedMD](https://www.advancedmd.com/)** | ~$1.13B valuation (acquired by Francisco Partners, 2024); ~$105M EBITDA | Integrated EHR, PM, billing, and telehealth for independent practices. | ~$130–$399/provider/month (Mental Health / AdvancedMD Now) or ~$429+/provider/month (General PM) | 30-day free trial (self-service for AdvancedMD Now / Mental Health, up to 3 providers) or 60-day trial for Patient Engagement bundle |
+| **[Kareo (Tebra)](https://www.tebra.com/)** | ~$1B+ valuation (unicorn; raised $250M in 2025); ~$240M–$250M ARR | Practice management and billing for small and independent practices. Formed by merger of Kareo and PatientPop. | ~$49–$99/provider/month (starter single module) or ~$300+/provider/month (EHR + PM bundle) | No free forever plan; no self-serve free trial (offers customized 1-on-1 product demo) |
+| **[DrChrono](https://www.drchrono.com/)** | ~$182.5M valuation (acquired by EverCommerce, 2021); powers 13,000+ providers | EHR and practice management with mobile-first iPad/iOS design and patient portal. | ~$199/provider/month (Foundation tier) | No free forever plan; no automated free trial (provides guided live sales product demo) |
 
 ## Open-Source GitHub Projects
 
