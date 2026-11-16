@@ -1,6 +1,6 @@
 # Awesome-Healthcare-Practice-Management
 
-# Top Healthcare Practice Management Ecosystem
+## Top Healthcare Practice Management Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on EHR/EMR, Medical Billing & Self-Hosted Practice Management*  
