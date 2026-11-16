@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#102a43" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00b4d8" />
+      <stop offset="50%" stop-color="#06d6a0" />
+      <stop offset="100%" stop-color="#48cae4" />
+    </linearGradient>
+
+    <!-- Title Glow Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#e0fbfc" />
+      <stop offset="100%" stop-color="#90e0ef" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1b3a5b" stroke-width="0.7" opacity="0.35" />
+    </pattern>
+
+    <!-- Glowing Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="glow-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(-15px, 10px); opacity: 0.6; }
+    }
+    @keyframes pulseOrb2 {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.3; }
+      50% { transform: scale(1.2) translate(20px, -15px); opacity: 0.55; }
+    }
+    @keyframes ecgScroll {
+      0% { stroke-dashoffset: 1200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatCross {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(3deg); }
+    }
+    @keyframes floatPill {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .orb-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb-2 { animation: pulseOrb2 10s ease-in-out infinite; transform-origin: 1000px 300px; }
+    .ecg-line {
+      stroke-dasharray: 1200;
+      animation: ecgScroll 5s linear infinite;
+    }
+    .medical-cross { animation: floatCross 6s ease-in-out infinite; transform-origin: 1060px 140px; }
+    .pill-item { animation: floatPill 5s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+
+  <!-- Grid Layer -->
+  <rect width="1200" height="420" fill="url(#grid)" />
+
+  <!-- Background Animated Glowing Orbs (placed strictly in background) -->
+  <circle class="orb-1" cx="200" cy="90" r="140" fill="#0077b6" filter="url(#glow-soft)" />
+  <circle class="orb-2" cx="1020" cy="310" r="160" fill="#06d6a0" filter="url(#glow-soft)" />
+
+  <!-- Background Subtle Dynamic ECG Heartbeat Pulse Line -->
+  <path class="ecg-line" d="M 0 350 L 320 350 L 340 330 L 355 375 L 375 285 L 395 390 L 415 335 L 430 350 L 750 350 L 770 330 L 785 375 L 805 285 L 825 390 L 845 335 L 860 350 L 1200 350"
+        fill="none" stroke="#00b4d8" stroke-width="2.5" opacity="0.3" filter="url(#glow)" />
+
+  <!-- Background Decorative Medical Cross Icon -->
+  <g class="medical-cross" opacity="0.25">
+    <circle cx="1060" cy="140" r="60" fill="#1e3a5f" stroke="#00b4d8" stroke-width="2" />
+    <path d="M 1045 140 L 1075 140 M 1060 125 L 1060 155" stroke="#06d6a0" stroke-width="8" stroke-linecap="round" />
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Titles, Badges (Crisp, High Contrast, Foreground) -->
+
+  <!-- Top Badge Pill -->
+  <g transform="translate(80, 52)">
+    <rect width="270" height="32" rx="16" fill="#1b2a4a" stroke="#00b4d8" stroke-width="1.2" opacity="0.9" />
+    <circle cx="18" cy="16" r="5" fill="#06d6a0" filter="url(#glow)" />
+    <text x="32" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#90e0ef" letter-spacing="1">CURATED HEALTHCARE ECOSYSTEM</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="80" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.5">
+    Awesome Healthcare Practice Management
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a0aec0">
+    EHR / EMR Platforms • Medical Billing &amp; Scheduling • Self-Hosted Clinical Systems
+  </text>
+
+  <!-- Divider Line -->
+  <rect x="80" y="215" width="850" height="2" fill="url(#accentGrad)" opacity="0.8" />
+
+  <!-- Feature Highlights / Tag Pills in Foreground -->
+  <g transform="translate(80, 245)">
+    <!-- Pill 1: ONC & HIPAA -->
+    <g class="pill-item">
+      <rect x="0" y="0" width="180" height="40" rx="8" fill="#132238" stroke="#2a4365" stroke-width="1.2" />
+      <text x="18" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#64dfdf">🛡️ ONC &amp; HIPAA Ready</text>
+    </g>
+
+    <!-- Pill 2: Open Source EMR -->
+    <g class="pill-item" transform="translate(195, 0)">
+      <rect x="0" y="0" width="190" height="40" rx="8" fill="#132238" stroke="#2a4365" stroke-width="1.2" />
+      <text x="18" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#48cae4">🏥 Open Source &amp; SaaS</text>
+    </g>
+
+    <!-- Pill 3: FHIR & HL7 -->
+    <g class="pill-item" transform="translate(400, 0)">
+      <rect x="0" y="0" width="175" height="40" rx="8" fill="#132238" stroke="#2a4365" stroke-width="1.2" />
+      <text x="18" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#72efdd">⚡ FHIR &amp; HL7 APIs</text>
+    </g>
+
+    <!-- Pill 4: Billing & RCM -->
+    <g class="pill-item" transform="translate(590, 0)">
+      <rect x="0" y="0" width="190" height="40" rx="8" fill="#132238" stroke="#2a4365" stroke-width="1.2" />
+      <text x="18" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#80ffdb">💳 Billing &amp; Scheduling</text>
+    </g>
+  </g>
+
+  <!-- Tagline / Footer Note -->
+  <text x="80" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#718096">
+    Comprehensive directory comparing leading SaaS solutions and verified open-source digital health repositories.
+  </text>
+</svg>
