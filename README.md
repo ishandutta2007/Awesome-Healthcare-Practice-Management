@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Healthcare-Practice-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Healthcare-Practice-Management?style=social&color=white" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Healthcare-Practice-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Healthcare-Practice-Management?style=social&color=white" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Healthcare-Practice-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Healthcare-Practice-Management?style=social&color=white" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Healthcare-Practice-Management/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -62,7 +62,7 @@ The market is **moderately fragmented** rather than a winner-take-all monopoly:
 
 *Active open-source electronic health records, practice management suites, synthetic data simulators, and FHIR platforms. Sorted in descending order by GitHub stargazers.*
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---|---|---|
 | **[HospitalRun](https://github.com/HospitalRun/hospitalrun-frontend)** | [![Stars](https://img.shields.io/github/stars/HospitalRun/hospitalrun-frontend?style=social&color=white)](https://github.com/HospitalRun/hospitalrun-frontend/stargazers) | **Offline-first EHR and hospital information system designed for low-resource environments.** Built with React/Node.js, HospitalRun works seamlessly when internet access is unstable or offline and synchronizes automatically upon reconnection. Features patient registration, clinical documentation, billing, medication dispensing, and basic reporting. |
 | **[OpenEMR](https://github.com/openemr/openemr)** | [![Stars](https://img.shields.io/github/stars/openemr/openemr?style=social&color=white)](https://github.com/openemr/openemr/stargazers) | **The flagship open-source EHR and practice management system with ONC certification.** GPLv2 licensed (PHP/MySQL). Certified as an ONC Complete EHR, OpenEMR provides native TOTP 2FA, OAuth2/OpenID Connect SSO, pediatric growth charts, e-prescribing, medical billing, scheduling, and SMART on FHIR REST APIs. Ideal for independent practices seeking full data sovereignty. |
@@ -85,7 +85,7 @@ We welcome contributions from clinicians, software developers, and health IT spe
 2. 🌿 **Create a new branch** (`git checkout -b feature/add-new-practice-tool`).
 3. 📝 **Add or update entries in `README.md`**:
    - For SaaS products: Provide specific starting pricing, explicit free trial conditions, and verifiable company size.
-   - For Open-Source projects: Include star badges linked to stargazers and concise technical summaries.
+   - For Open-Source projects: Include Stars_Badges linked to stargazers and concise technical summaries.
 4. 🚀 **Submit a Pull Request** with clear context and official references.
 
 ---
@@ -119,3 +119,12 @@ Thank you to all community members and healthcare IT contributors!
 <p align="center">
   <b>Built for clinic administrators, health IT architects, and developers shaping the future of digital healthcare.</b>
 </p>
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Healthcare-Practice-Management&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Healthcare-Practice-Management_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Healthcare-Practice-Management_growth.svg">
+  </picture>
+</a>
